@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Earning & Product Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="auth">
+    <div id="register-form" class="form">
+      <h2>Register</h2>
+      <input type="text" placeholder="Full Name" id="reg-name">
+      <input type="text" placeholder="Region" id="reg-region">
+      <input type="email" placeholder="Email" id="reg-email">
+      <input type="text" placeholder="Phone Number" id="reg-phone">
+      <input type="password" placeholder="Password" id="reg-pass">
+      <input type="password" placeholder="Retype Password" id="reg-repass">
+      <input type="file" id="payment-proof">
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div id="login-form" class="form hidden">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" id="log-email">
+      <input type="password" placeholder="Password" id="log-pass">
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <div id="dashboard" class="hidden">
+    <h2>Welcome to Your Dashboard</h2>
+    <div id="balance">Balance: Ksh 0</div>
+    <div id="videos">
+      <h3>Watch Videos</h3>
+      <video width="320" height="240" controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      <button onclick="earnMoney()">Mark as Watched</button>
+    </div>
+    <div id="products">
+      <h3>Products</h3>
+      <ul>
+        <li>Product A - Description</li>
+        <li>Product B - Description</li>
+      </ul>
+    </div>
+    <div id="withdraw">
+      <h3>Withdraw</h3>
+      <button onclick="withdraw()">Request Withdrawal</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
